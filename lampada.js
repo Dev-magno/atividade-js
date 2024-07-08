@@ -1,16 +1,24 @@
 
-  function ligar(){
-    var imagem = document.getElementById('myImg').src
-    var imagem_ligado = 'pic_bulboff-on.gif' 
-    var imagem_desligado = 'pic_bulboff-of.gif'
+  function ligarDesligar(){
+    var imagem = document.getElementById('myImg')
+    var body = document.getElementById('body')
+    var ligado = 'pic_bulboff-on.gif' 
+    var desligado = 'pic_bulboff-of.gif'
 
-    if(imagem == imagem_ligado){
-        document.getElementById('myImg').src = imagem_desligado
-    }
-
-    else{
-        document.getElementById('myImg').src = imagem_desligado
-    }
+    if (imagem.src.includes(desligado)) {
+      imagem.src = ligado;
+      body.style.backgroundColor = 'white'
+  } else {
+      imagem.src = desligado
+      body.style.backgroundColor = 'black'
   }
 
-  document.getElementById('myImg').addEventListener('click', ligarDesligar)
+  window.onload = function(){
+    document.getElementById('trocar').addEventListener('click', ligarDesligar)
+  }
+
+  }
+
+  
+
+  

@@ -4,13 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
     <!-- <script src="atividade.js" defer></script> -->
      <!-- <script src="bebida.js" defer></script> -->
-     <script src="lampada.js" defer></script>
+     <!-- <script src="lampada.js" defer></script> -->
+     <script src="senha.js" defer></script>
 </head>
-<br>
-    <img id="myImg" src="pic_bulboff-of.gif" alt="" style="width: 100px;">
-    <img id="myImg" src="pic_bulbon-on.gif" alt="" style="width: 100px;">
-    <button onclick="ligarDesligar" style="width: 50px; padding: 8px; background-color: orange;"></button>
+<body id="body">
+    <!-- <div id="dom">
+        <div class="ligar">
+            <img src="pic_bulboff-of.gif" alt="" style="width: 100px;" id="myImg">
+            <img src="pic_bulbon-on.gif" alt="" style="width: 100px;" id="myImg">
+        </div>
+
+        <div class="ligar">
+            <form action="">
+                <input id="trocar" onclick="ligarDesligar()" type="button" value="ligarDesligar">
+                <input id="trocar" onclick="ligarDesligar()" type="button" value="ligarDesligar">
+            </form>
+        </div> 
+    </div> -->
+
+        <div class="container">
+            <div class="password-container">
+                <label for="">Senha: </label> <input type="password" id="password" placeholder="password">
+                <button id="showPassword"  class="show-password-button"><img src="olho _fechado.png" alt=""></button>
+            </div>
+        </div>
 </body>
 </html>

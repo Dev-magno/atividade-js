@@ -1,13 +1,13 @@
 
-var PasswordButton = document.getElementById('showPassword');
+var PasswordImg = document.getElementById('showPassword');
 var passwordcampo = document.getElementById('password');
 
 PasswordButton.addEventListener('click', function () {
     if (passwordcampo.type === 'password') {
         passwordcampo.type = 'text';
-        PasswordButton.textContent = 'Hide'
+        PasswordImg.src = 'olho_aberto.png'
     } else {
         passwordcampo.type = 'password';
-        PasswordButton.textContent = 'Show';
+        PasswordImg.src = 'olho _fechado.png';
     }
 });

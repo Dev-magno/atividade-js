@@ -1,23 +1,27 @@
 
-  function ligarDesligar(){
-    var imagem = document.getElementById('myImg')
-    var body = document.getElementById('body')
-    var ligado = 'pic_bulboff-on.gif' 
-    var desligado = 'pic_bulboff-of.gif'
+const btn_onoff = document.querySelector('#btn_onoff')
+const lampada = document.querySelector('#lamp')
+const icone_onoff = document.querySelector('#icon_onoff')
+const body = document.querySelector('body')
 
-    if (imagem.src.includes(desligado)) {
-      imagem.src = ligado;
-      body.style.backgroundColor = 'white'
-  } else {
-      imagem.src = desligado
-      body.style.backgroundColor = 'black'
+let ligado = true
+btn_onoff.addEventListener('clik', ()=> {
+  if(ligado) {
+    lampada.src = 'pic_bulboff.gif'
+    icone_onoff.innerHTML = 'togle_of'
+    body.style.backgroundColor = 'black'
+    body.style.color = 'white'
+    icone_onoff.style.color = 'white'
+    ligado = false
+  }else{
+    lampada.src = 'pic_bulboff.gif'
+    icone_onoff.innerHTML = 'togle_on'
+    body.style.backgroundColor = 'black'
+    body.style.color = 'black'
+    icone_onoff.style.color = 'black'
+    ligado = true
   }
-
-  window.onload = function(){
-    document.getElementById('trocar').addEventListener('click', ligarDesligar)
-  }
-
-  }
+})
 
   
 

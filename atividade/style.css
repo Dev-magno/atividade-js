@@ -5,6 +5,7 @@
   .password-container {
     position: relative;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100vw;
@@ -19,13 +20,18 @@
     margin: 10px;
   }
   
-  .show-password-button {
+  .show-password-button{
     position: absolute;
     top: 50%;
-    right: 40.4%;
+    right: 38%;
     height: 30px;
     transform: translateY(-52%);
     background-color: transparent;
     border: none;
     cursor: pointer;
   }
+.message {
+  font-size: 10px;
+  padding-top: 0px;
+
+}

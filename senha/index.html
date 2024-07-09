@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="dom.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="password-container">
+            <label for="password">Senha</label>
+            <input type="password" id="password" placeholder="digite sua senha">
+            <label for="password1">Confirmar Senha</label>
+            <input type="password" id="password1" placeholder="confirme sua senha">
+            <img  id="showPassword" class="showPassword-button" src="olho_fechado.png" alt="">
+            <span class="message" id="message"></span>
+            <button onclick="confirmarSenha()">Confirmar Senha</button>
+        </div>
+    </div>
+</body>
+</html>
